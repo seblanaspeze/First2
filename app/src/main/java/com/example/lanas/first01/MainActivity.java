@@ -1,17 +1,27 @@
 package com.example.lanas.first01;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
+
+
+    Button nouveauButton;
+    TextView text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        nouveauButton = (Button) findViewById(R.id.nouveauButton);
+        text = (TextView) findViewById((R.id.texttt));
     }
 
 
@@ -20,6 +30,14 @@ public class MainActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    public void nouveauButton(View v){
+
+        text.setText("Bravo tu as fait ta méthode");
+
+
+        text.setVisibility(v.INVISIBLE);
     }
 
     @Override
