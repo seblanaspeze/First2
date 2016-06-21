@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
         compteurF = 0; compteurL = 0; compteurP = 0; compteurT = 0;
         //blabla
+        //test
     }
 
 
