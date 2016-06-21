@@ -1,5 +1,8 @@
 package com.example.lanas.first01;
 
+import android.annotation.TargetApi;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -8,6 +11,11 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+
+import java.util.ArrayList;
+
+import CodeSource.Identification.ScenarioId;
+import CodeSource.Identification.Utilisateur;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     ImageButton pinterest;
     ImageButton linkedin;
     ImageButton eclair;
+    ImageButton photo;
+    ImageButton fleche;
     EditText identifiant;
     EditText password;
 
@@ -29,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     int compteurP;
     int compteurL;
 
+    ArrayList<Utilisateur> utilisateurs;
     ImageButton plus;
     int compteurPlus;
     //jhhhdzhzdhd
@@ -44,11 +55,13 @@ public class MainActivity extends AppCompatActivity {
         pinterest = (ImageButton) findViewById(R.id.pinterest);
         linkedin = (ImageButton) findViewById(R.id.linkedin);
         eclair = (ImageButton) findViewById(R.id.eclair);
+        photo = (ImageButton) findViewById(R.id.photo);
+        fleche = (ImageButton) findViewById(R.id.fleche);
         identifiant = (EditText) findViewById(R.id.identifiant);
         password = (EditText) findViewById(R.id.password);
 
         compteurF = 0; compteurL = 0; compteurP = 0; compteurT = 0;
-
+        utilisateurs  = ScenarioId.scenario();
         
     }
 
@@ -114,6 +127,49 @@ public class MainActivity extends AppCompatActivity {
         linkedin.setBackgroundResource(R.drawable.linkedin);
 
         compteurF = 1; compteurL = 1; compteurP = 1; compteurT = 1;
+    }
+
+
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+    public void password(View v){
+
+        String name = identifiant.getText().toString();
+        int s = utilisateurs.size();
+        Drawable photo_profil = null;
+
+        for(int i = 0; i < s; i++){
+
+            if (utilisateurs.get(i).getId().compareTo(name) == 0){
+                photo_profil = utilisateurs.get(i).getPhoto();
+            }
+
+        }
+
+
+        photo.setBackground(photo_profil);
+
+    }
+
+    public void fleche(View v){
+
+        String name = identifiant.getText().toString();
+        String pass = password.getText().toString();
+        int s = utilisateurs.size();
+
+
+        for(int i = 0; i < s; i++){
+
+            if (utilisateurs.get(i).getId().compareTo(name) == 0){
+                if (utilisateurs.get(i).getPassword().compareTo(pass) == 0){
+
+                    ecranID.setVisibility(v.INVISIBLE);
+                }
+                else{
+                    identifiant.setText("identifiant invalide");
+                }
+            }
+
+        }
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

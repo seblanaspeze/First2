@@ -1,5 +1,7 @@
 package CodeSource.Identification;
 
+import android.graphics.drawable.Drawable;
+
 /**
  * Created by Lanas on 21/06/2016.
  */
@@ -7,12 +9,12 @@ public class Utilisateur {
 
     private String id;
     private String password;
-    private String pathName;
+    private Drawable photo;
 
-    public Utilisateur(String id, String password, String pathName){
+    public Utilisateur(String id, String password, Drawable photo){
         this.id = id;
         this.password = password;
-        this.pathName = pathName;
+        this.photo = photo;
     }
 
     public String getId() {
@@ -31,11 +33,11 @@ public class Utilisateur {
         this.password = password;
     }
 
-    public String getPathName() {
-        return pathName;
+    public Drawable getPhoto() {
+        return photo;
     }
 
-    public void setPathName(String pathName) {
-        this.pathName = pathName;
+    public void setPhoto(Drawable photo) {
+        this.photo = photo;
     }
 }
