@@ -5,15 +5,31 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    // Ecran d'identification
+    // Layout
+    RelativeLayout ecranID;
+    ImageButton facebook ;
+    ImageButton twitter;
+    ImageButton pinterest;
+    ImageButton linkedin;
+    ImageButton eclair;
+    EditText identifiant;
+    EditText password;
 
-    Button nouveauButton;
-    TextView text;
+    //Compteur
+    int compteurF;
+    int compteurT;
+    int compteurP;
+    int compteurL;
+
+
     //jhhhdzhzdhd
 
     @Override
@@ -21,8 +37,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nouveauButton = (Button) findViewById(R.id.nouveauButton);
-        text = (TextView) findViewById((R.id.texttt));
+        ecranID = (RelativeLayout) findViewById(R.id.ecranID);
+        facebook = (ImageButton) findViewById(R.id.facebook);
+        twitter = (ImageButton) findViewById(R.id.twitter);
+        pinterest = (ImageButton) findViewById(R.id.pinterest);
+        linkedin = (ImageButton) findViewById(R.id.linkedin);
+        eclair = (ImageButton) findViewById(R.id.eclair);
+        identifiant = (EditText) findViewById(R.id.identifiant);
+        password = (EditText) findViewById(R.id.password);
+
+        compteurF = 0; compteurL = 0; compteurP = 0; compteurT = 0;
     }
 
 
@@ -33,12 +57,50 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    public void nouveauButton(View v){
+    public void facebook(View v){
 
-        text.setText("Bravo tu as fait ta méthode");
+        if (compteurF == 0){
+            facebook.setBackgroundResource(R.drawable.facebook);
+            compteurF = 1;
+        }
+        else{
+            facebook.setBackgroundResource(R.drawable.facebook40);
+            compteurF = 0;
+        }
+    }
 
+    public void twitter(View v){
 
-        text.setVisibility(v.INVISIBLE);
+        if (compteurF == 0){
+            twitter.setBackgroundResource(R.drawable.twitter);
+            compteurT = 1;
+        }
+        else{
+            twitter.setBackgroundResource(R.drawable.twitter40);
+            compteurT = 0;
+        }
+    }
+    public void pinterest(View v){
+
+        if (compteurP == 0){
+            pinterest.setBackgroundResource(R.drawable.pinterest);
+            compteurP = 1;
+        }
+        else{
+            pinterest.setBackgroundResource(R.drawable.pinterest40);
+            compteurP = 0;
+        }
+    }
+    public void linkedin(View v){
+
+        if (compteurL == 0){
+            linkedin.setBackgroundResource(R.drawable.linkedin);
+            compteurL = 1;
+        }
+        else{
+            linkedin.setBackgroundResource(R.drawable.linkedin);
+            compteurL = 0;
+        }
     }
 
     @Override
