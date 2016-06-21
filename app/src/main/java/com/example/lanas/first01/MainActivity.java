@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
 
         compteurF = 0; compteurL = 0; compteurP = 0; compteurT = 0;
+        //blabla
     }
 
 
