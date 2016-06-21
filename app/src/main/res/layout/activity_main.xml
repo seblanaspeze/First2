@@ -110,7 +110,8 @@
             android:id="@+id/password"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:layout_alignTop="@+id/identifiant" />
+            android:layout_alignTop="@+id/identifiant"
+            android:onClick="password" />
 
     </RelativeLayout>
 
@@ -129,7 +130,8 @@
             android:background="@drawable/fleche"
             android:layout_alignParentBottom="false"
             android:layout_centerHorizontal="true"
-            android:clickable="true" />
+            android:clickable="true"
+            android:onClick="fleche" />
     </RelativeLayout>
 
 </RelativeLayout>
