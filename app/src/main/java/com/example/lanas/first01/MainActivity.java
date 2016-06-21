@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
     int compteurP;
     int compteurL;
 
-
+    ImageButton plus;
+    int compteurPlus;
     //jhhhdzhzdhd
 
     @Override
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
 
         compteurF = 0; compteurL = 0; compteurP = 0; compteurT = 0;
+
+        
     }
 
 
