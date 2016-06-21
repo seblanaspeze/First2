@@ -103,6 +103,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void eclair(View v){
+
+        facebook.setBackgroundResource(R.drawable.facebook);
+        twitter.setBackgroundResource(R.drawable.twitter);
+        pinterest.setBackgroundResource(R.drawable.pinterest);
+        linkedin.setBackgroundResource(R.drawable.linkedin);
+
+        compteurF = 1; compteurL = 1; compteurP = 1; compteurT = 1;
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

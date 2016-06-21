@@ -63,7 +63,8 @@
             android:id="@+id/eclair"
             android:clickable="true"
             android:background="@drawable/eclair"
-            android:layout_marginLeft="30dp" />
+            android:layout_marginLeft="30dp"
+            android:onClick="eclair" />
 
         <ImageView
             android:layout_width="wrap_content"
