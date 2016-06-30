@@ -6,14 +6,15 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity"
     android:background="@drawable/fond"
-    android:id="@+id/principal">
+    android:id="@+id/principal"
+    android:visibility="visible">
 
     <RelativeLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/ecranid"
-        android:visibility="invisible">
+        android:visibility="visible">
 
 
 
@@ -103,7 +104,7 @@
             <ImageButton
                 android:layout_width="90dp"
                 android:layout_height="90dp"
-                android:id="@+id/imageButton"
+                android:id="@+id/photo"
                 android:background="@drawable/photo_profil"
                 android:layout_centerHorizontal="true" />
 
@@ -116,7 +117,7 @@
                 android:id="@+id/identifiant"
                 android:layout_alignStart="@+id/password"
                 android:layout_marginTop="130dp"
-                android:layout_alignTop="@+id/imageButton"
+                android:layout_alignTop="@+id/photo"
                 android:layout_centerHorizontal="true" />
             <EditText
                 android:layout_width="wrap_content"
@@ -141,7 +142,7 @@
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageButton5"
+                android:id="@+id/fleche"
                 android:background="@drawable/fleche"
                 android:layout_alignParentBottom="false"
                 android:layout_centerHorizontal="true"
@@ -154,7 +155,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/iconestri"
         android:layout_marginLeft="210dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:visibility="invisible">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -185,7 +187,8 @@
         android:id="@+id/layouttri"
         android:clickable="true"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:visibility="invisible">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -198,7 +201,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/boutons"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -225,7 +229,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/tshirts">
+        android:id="@+id/tshirts"
+        android:visibility="invisible">
 
         <ImageView
             android:layout_width="wrap_content"

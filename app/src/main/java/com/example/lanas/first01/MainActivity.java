@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
@@ -40,16 +41,36 @@ public class MainActivity extends AppCompatActivity {
     int compteurL;
 
     ArrayList<Utilisateur> utilisateurs;
-    ImageButton plus;
+
     int compteurPlus;
     //jhhhdzhzdhd
+
+    // Ecran des t-shirt
+    RelativeLayout iconeTri;
+    ImageButton horloge;
+    ImageButton etoile;
+    ImageButton random;
+    RelativeLayout layoutTri;
+    ImageButton trie; boolean compteurTri;
+    RelativeLayout bouton;
+    ImageButton plus;
+    ImageButton validate;
+    ImageButton power;
+    RelativeLayout tShirt;
+    ImageView tShirt1;
+    ImageView tShirt2;
+    ImageView tShirt3;
+    ImageView tShirt4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ecranID = (RelativeLayout) findViewById(R.id.ecranID);
+        // initialisation de l'écran d'identificaiton
+
+        ecranID = (RelativeLayout) findViewById(R.id.ecranid);
         facebook = (ImageButton) findViewById(R.id.facebook);
         twitter = (ImageButton) findViewById(R.id.twitter);
         pinterest = (ImageButton) findViewById(R.id.pinterest);
@@ -62,6 +83,24 @@ public class MainActivity extends AppCompatActivity {
 
         compteurF = 0; compteurL = 0; compteurP = 0; compteurT = 0;
         utilisateurs  = ScenarioId.scenario();
+
+        // Initialisation de l'ecran des t-shirt
+
+        iconeTri = (RelativeLayout) findViewById(R.id.iconestri);
+        horloge = (ImageButton) findViewById(R.id.horloge);
+        etoile = (ImageButton) findViewById(R.id.etoile);
+        random = (ImageButton) findViewById(R.id.random);
+        layoutTri = (RelativeLayout) findViewById(R.id.layouttri);
+        trie = (ImageButton) findViewById(R.id.tri);
+        bouton = (RelativeLayout) findViewById(R.id.boutons); compteurTri = true;
+        plus = (ImageButton) findViewById(R.id.plus);
+        validate = (ImageButton) findViewById(R.id.validate);
+        power = (ImageButton) findViewById(R.id.power);
+        tShirt = (RelativeLayout) findViewById(R.id.tshirts);
+        tShirt1 = (ImageView) findViewById(R.id.tshirt1);
+        tShirt2 = (ImageView) findViewById(R.id.tshirt2);
+        tShirt3 = (ImageView) findViewById(R.id.tshirt3);
+        tShirt4 = (ImageView) findViewById(R.id.tshirt4);
         
     }
 
@@ -163,6 +202,10 @@ public class MainActivity extends AppCompatActivity {
                 if (utilisateurs.get(i).getPassword().compareTo(pass) == 0){
 
                     ecranID.setVisibility(v.INVISIBLE);
+                    iconeTri.setVisibility(v.VISIBLE);
+                    bouton.setVisibility(v.VISIBLE);
+                    tShirt.setVisibility(v.VISIBLE);
+
                 }
                 else{
                     identifiant.setText("identifiant invalide");
@@ -170,6 +213,18 @@ public class MainActivity extends AppCompatActivity {
             }
 
         }
+    }
+    public void tri (View v){
+
+        if (compteurTri == true){
+            iconeTri.setVisibility(v.VISIBLE);
+            compteurTri = false;
+        }
+        else{
+            iconeTri.setVisibility(v.INVISIBLE);
+            compteurTri = true;
+        }
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
