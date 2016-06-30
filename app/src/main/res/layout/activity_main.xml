@@ -9,15 +9,23 @@
     android:id="@+id/principal">
 
     <RelativeLayout
+<<<<<<< HEAD
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/ecranID">
+=======
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ecranid"
+        android:visibility="invisible">
+>>>>>>> 4ff2dd5... commiter tout ce que jai staged
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="180dp"
             android:id="@+id/layoutPower"
             android:layout_alignParentBottom="true">
+<<<<<<< HEAD
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -138,6 +146,238 @@
                 android:clickable="true"
                 android:onClick="fleche" />
         </RelativeLayout>
+=======
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/facebook"
+                android:background="@drawable/facebook40"
+                android:layout_marginBottom="78dp"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:onClick="facebook" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linkedin"
+                android:background="@drawable/linkedin40"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="50dp"
+                android:onClick="linkedin" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pinterest"
+                android:background="@drawable/pinterest40"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="50dp"
+                android:longClickable="true"
+                android:onClick="pinterest" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/twitter"
+                android:background="@drawable/twitter40"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="50dp"
+                android:onClick="twitter" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/eclair"
+                android:clickable="true"
+                android:background="@drawable/eclair"
+                android:layout_marginLeft="30dp"
+                android:onClick="eclair" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:background="@drawable/publiersur"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/identification"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="false">
+
+            <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:id="@+id/imageButton"
+                android:background="@drawable/photo_profil"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Name"
+                android:ems="10"
+                android:id="@+id/identifiant"
+                android:layout_alignStart="@+id/password"
+                android:layout_marginTop="130dp"
+                android:layout_alignTop="@+id/imageButton"
+                android:layout_centerHorizontal="true" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:id="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:layout_alignTop="@+id/identifiant" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutFleche"
+            android:layout_marginBottom="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton5"
+                android:background="@drawable/fleche"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:clickable="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconestri"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horloge"
+            android:background="@drawable/horloge" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etoile"
+            android:background="@drawable/etoile"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="35dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/random"
+            android:background="@drawable/random"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="90dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layouttri"
+        android:clickable="true"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tri"
+            android:background="@drawable/tri" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/boutons"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plus"
+            android:background="@drawable/plus"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/validate"
+            android:background="@drawable/validate"
+            android:layout_marginLeft="220dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/power"
+            android:background="@drawable/power"
+            android:layout_marginLeft="290dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tshirts">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tshirt4"
+            android:background="@drawable/tshirt4"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="80dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tshirt3"
+            android:background="@drawable/tshirt3"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="90dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tshirt2"
+            android:background="@drawable/tshirt2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tshirt1"
+            android:background="@drawable/tshirt1"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="110dp" />
+
+>>>>>>> 4ff2dd5... commiter tout ce que jai staged
     </RelativeLayout>
 
 </RelativeLayout>
