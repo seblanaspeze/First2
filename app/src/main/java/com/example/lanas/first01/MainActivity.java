@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
 
         compteurF = 0; compteurL = 0; compteurP = 0; compteurT = 0;
+
         utilisateurs  = ScenarioId.scenario();
 
         // Initialisation de l'ecran des t-shirt
@@ -102,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         tShirt3 = (ImageView) findViewById(R.id.tshirt3);
         tShirt4 = (ImageView) findViewById(R.id.tshirt4);
         
+
     }
 
 
