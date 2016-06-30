@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
                 if (utilisateurs.get(i).getPassword().compareTo(pass) == 0){
 
                     ecranID.setVisibility(v.INVISIBLE);
-                    iconeTri.setVisibility(v.VISIBLE);
+                    layoutTri.setVisibility(v.VISIBLE);
                     bouton.setVisibility(v.VISIBLE);
                     tShirt.setVisibility(v.VISIBLE);
 

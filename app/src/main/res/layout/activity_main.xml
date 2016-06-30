@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/ecranid"
-        android:visibility="visible">
+        android:visibility="invisible">
 
 
 
@@ -188,7 +188,7 @@
         android:clickable="true"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="20dp"
-        android:visibility="invisible">
+        android:visibility="visible">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -202,7 +202,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/boutons"
         android:layout_alignParentBottom="true"
-        android:visibility="invisible">
+        android:visibility="visible">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -230,7 +230,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/tshirts"
-        android:visibility="invisible">
+        android:visibility="visible">
 
         <ImageView
             android:layout_width="wrap_content"
