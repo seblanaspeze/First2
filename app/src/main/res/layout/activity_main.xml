@@ -189,14 +189,15 @@
         android:layout_marginLeft="290dp"
         android:layout_marginTop="20dp"
 
-        android:visibility="visible">
+        android:visibility="invisible">
 
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tri"
-            android:background="@drawable/tri" />
+            android:background="@drawable/tri"
+            android:onClick="tri" />
 
     </RelativeLayout>
 
@@ -212,7 +213,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/plus"
             android:background="@drawable/plus"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:onClick="plus" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -241,7 +243,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/dessiner"
             android:background="@drawable/dessiner"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:onClick="dessiner" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -274,7 +277,8 @@
             android:layout_height="380dp"
             android:id="@+id/tshirt25"
             android:background="@drawable/tshirt25"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -282,13 +286,13 @@
         android:layout_height="380dp"
         android:id="@+id/tshirtdessin"
         android:background="@drawable/tshirt100"
-        android:layout_marginTop="150dp"></RelativeLayout>
+        android:layout_marginTop="60dp"></RelativeLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/leds"
-        android:layout_marginTop="130dp">
+        android:layout_marginTop="40dp">
 
         <ImageButton
             android:layout_width="wrap_content"

@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout layoutTri;
     ImageButton trie; boolean compteurTri;
     RelativeLayout bouton;
-    ImageButton plus;
+    ImageButton plus; boolean etatPlus;
     ImageButton validate;
     ImageButton power;
     RelativeLayout tShirt;
@@ -61,6 +61,20 @@ public class MainActivity extends AppCompatActivity {
     ImageView tShirt2;
     ImageView tShirt3;
     ImageView tShirt4;
+
+    // Menu plus
+
+    RelativeLayout menuPlus;
+    ImageButton dessiner;
+    ImageButton store;
+    ImageButton mesphoto;
+    RelativeLayout tShirtPlus;
+
+    //Ecran de dessin
+
+    RelativeLayout tShirtDessin;
+    RelativeLayout led;
+
 
 
     @Override
@@ -94,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         layoutTri = (RelativeLayout) findViewById(R.id.layouttri);
         trie = (ImageButton) findViewById(R.id.tri);
         bouton = (RelativeLayout) findViewById(R.id.boutons); compteurTri = true;
-        plus = (ImageButton) findViewById(R.id.plus);
+        plus = (ImageButton) findViewById(R.id.plus); etatPlus = true;
         validate = (ImageButton) findViewById(R.id.validate);
         power = (ImageButton) findViewById(R.id.power);
         tShirt = (RelativeLayout) findViewById(R.id.tshirts);
@@ -102,7 +116,19 @@ public class MainActivity extends AppCompatActivity {
         tShirt2 = (ImageView) findViewById(R.id.tshirt2);
         tShirt3 = (ImageView) findViewById(R.id.tshirt3);
         tShirt4 = (ImageView) findViewById(R.id.tshirt4);
-        
+
+        //Menu plus
+
+        menuPlus = (RelativeLayout) findViewById(R.id.menuplus);
+        dessiner = (ImageButton) findViewById(R.id.dessiner);
+        store = (ImageButton) findViewById(R.id.store);
+        mesphoto =(ImageButton) findViewById(R.id.mesphotos);
+        tShirtPlus = (RelativeLayout) findViewById(R.id.tshirtplus);
+
+        //Ecran de dessin
+
+        tShirtDessin = (RelativeLayout) findViewById(R.id.tshirtplus);
+        led = (RelativeLayout) findViewById(R.id.leds);
 
     }
 
@@ -227,6 +253,46 @@ public class MainActivity extends AppCompatActivity {
             compteurTri = true;
         }
 
+    }
+
+    public  void plus (View v){
+
+        if (etatPlus == true){
+            layoutTri.setVisibility(v.INVISIBLE);
+            iconeTri.setVisibility(v.INVISIBLE);
+            eclair.setVisibility(v.INVISIBLE);
+            power.setVisibility(v.INVISIBLE);
+            tShirtDessin.setVisibility(v.INVISIBLE);
+            led.setVisibility(v.INVISIBLE);
+
+            menuPlus.setVisibility(v.VISIBLE);
+            tShirtPlus.setVisibility(v.VISIBLE);
+            plus.setBackgroundResource(R.drawable.annuler);
+            etatPlus = false;
+        }
+        else{
+
+            layoutTri.setVisibility(v.VISIBLE);
+            iconeTri.setVisibility(v.VISIBLE);
+            eclair.setVisibility(v.VISIBLE);
+            power.setVisibility(v.VISIBLE);
+
+            menuPlus.setVisibility(v.INVISIBLE);
+            tShirtPlus.setVisibility(v.INVISIBLE);
+            plus.setBackgroundResource(R.drawable.plus);
+            etatPlus = true;
+        }
+
+
+    }
+
+    public void dessiner (View v){
+
+        menuPlus.setVisibility(v.INVISIBLE);
+        tShirtPlus.setVisibility(v.INVISIBLE);
+
+        tShirtDessin.setVisibility(v.VISIBLE);
+        led.setVisibility(v.VISIBLE);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
