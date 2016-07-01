@@ -1,7 +1,5 @@
 package CodeSource.Identification;
 
-import android.graphics.drawable.Drawable;
-
 /**
  * Created by Lanas on 21/06/2016.
  */
@@ -9,9 +7,9 @@ public class Utilisateur {
 
     private String id;
     private String password;
-    private Drawable photo;
+    private int photo;
 
-    public Utilisateur(String id, String password, Drawable photo){
+    public Utilisateur(String id, String password, int photo){
         this.id = id;
         this.password = password;
         this.photo = photo;
@@ -33,11 +31,11 @@ public class Utilisateur {
         this.password = password;
     }
 
-    public Drawable getPhoto() {
+    public int getPhoto() {
         return photo;
     }
 
-    public void setPhoto(Drawable photo) {
+    public void setPhoto(int photo) {
         this.photo = photo;
     }
 }

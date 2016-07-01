@@ -1,7 +1,6 @@
 package com.example.lanas.first01;
 
 import android.annotation.TargetApi;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -202,12 +201,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
+
     public void password(View v){
 
         String name = identifiant.getText().toString();
         int s = utilisateurs.size();
-        Drawable photo_profil = null;
+        int photo_profil = 0;
 
         for(int i = 0; i < s; i++){
 
@@ -218,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        photo.setBackground(photo_profil);
+        photo.setBackgroundResource(photo_profil);
 
     }
 
@@ -299,6 +298,7 @@ public class MainActivity extends AppCompatActivity {
         tShirtDessin.setVisibility(v.VISIBLE);
         led.setVisibility(v.VISIBLE);
     }
+
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     public void led (View v){

@@ -1,6 +1,6 @@
 package CodeSource.Identification;
 
-import android.graphics.drawable.Drawable;
+import com.example.lanas.first01.R;
 
 import java.util.ArrayList;
 
@@ -19,9 +19,9 @@ public class ScenarioId {
         String path3 = path + "profil_seb";
 
 
-        Utilisateur nico = new Utilisateur("Nicolas", "nico", Drawable.createFromPath(path1) );
-        Utilisateur lina = new Utilisateur("Lina", "lina", Drawable.createFromPath(path2));
-        Utilisateur seb = new Utilisateur("Sebastien", "seb", Drawable.createFromPath(path3));
+        Utilisateur nico = new Utilisateur("Nicolas", "nico", R.drawable.profil_nico );
+        Utilisateur lina = new Utilisateur("Lina", "lina", R.drawable.photo_profil);
+        Utilisateur seb = new Utilisateur("Sebastien", "seb", R.drawable.profil_seb);
 
         liste.add(nico);
         liste.add(lina);
