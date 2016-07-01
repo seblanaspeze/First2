@@ -287,13 +287,19 @@
         android:layout_height="380dp"
         android:id="@+id/tshirtdessin"
         android:background="@drawable/tshirt100"
-        android:layout_marginTop="60dp"></RelativeLayout>
+        android:layout_marginTop="60dp"
+        android:visibility="invisible"></RelativeLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/leds"
-        android:layout_marginTop="40dp">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1074,7 +1080,8 @@
             android:layout_marginLeft="220dp"
             android:layout_marginTop="270dp"
             android:labelFor="@integer/led71"
-            android:contentDescription="@string/eteint"/>
+            android:contentDescription="@string/eteint"
+            android:onClick="led"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1084,7 +1091,8 @@
             android:layout_marginLeft="240dp"
             android:layout_marginTop="270dp"
             android:labelFor="@integer/led72"
-            android:contentDescription="@string/eteint"/>
+            android:contentDescription="@string/eteint"
+            android:onClick="led"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1104,7 +1112,8 @@
             android:layout_marginLeft="120dp"
             android:layout_marginTop="290dp"
             android:labelFor="@integer/led74"
-            android:contentDescription="@string/eteint"/>
+            android:contentDescription="@string/eteint"
+            android:onClick="led"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1114,7 +1123,8 @@
             android:layout_marginLeft="140dp"
             android:layout_marginTop="290dp"
             android:labelFor="@integer/led75"
-            android:contentDescription="@string/eteint"/>
+            android:contentDescription="@string/eteint"
+            android:onClick="led"/>
 
         <ImageButton
             android:layout_width="wrap_content"
