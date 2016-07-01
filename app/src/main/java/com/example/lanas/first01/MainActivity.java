@@ -328,9 +328,41 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_settings1) {
             return true;
         }
+        if (id == R.id.action_settings2) {
+            return true;
+        }
+        if (id == R.id.action_settings3) {
+            return true;
+        }
+        if (id == R.id.action_settings4) {
+            return true;
+        }
+        if (id == R.id.action_settings5) {
+            return true;
+        }
+        if (id == R.id.action_settings6) {
+            return true;
+        }
+        if (id == R.id.action_settings7) {
+
+            ecranID.setVisibility(View.VISIBLE);
+            password.setText("");
+            identifiant.setText("Name");
+
+            iconeTri.setVisibility(View.INVISIBLE);
+            layoutTri.setVisibility(View.INVISIBLE);
+            bouton.setVisibility(View.INVISIBLE);
+            menuPlus.setVisibility(View.INVISIBLE);
+            tShirtPlus.setVisibility(View.INVISIBLE);
+            tShirtDessin.setVisibility(View.INVISIBLE);
+            led.setVisibility(View.INVISIBLE);
+            tShirt.setVisibility(View.INVISIBLE);
+
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
