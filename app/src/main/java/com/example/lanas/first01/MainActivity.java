@@ -314,9 +314,9 @@ public class MainActivity extends AppCompatActivity {
       }
       else{
 
-          //v.setContentDescription("a");
-          //v.setBackgroundResource(R.drawable.ledactive);
-          //ledAllumer.set(led,1);
+          v.setContentDescription("a");
+          v.setBackgroundResource(R.drawable.ledactive);
+          ledAllumer.set(led,1);
       }
 
     }
