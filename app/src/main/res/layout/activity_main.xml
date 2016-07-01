@@ -300,7 +300,9 @@
             android:id="@+id/led1"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="110dp" />
+            android:layout_marginTop="110dp"
+            android:labelFor="@integer/led1"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -308,7 +310,9 @@
             android:id="@+id/led2"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="110dp" />
+            android:layout_marginTop="110dp"
+            android:labelFor="@integer/led2"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -316,7 +320,9 @@
             android:id="@+id/led3"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="110dp" />
+            android:layout_marginTop="110dp"
+            android:labelFor="@integer/led3"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -324,7 +330,9 @@
             android:id="@+id/led4"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="110dp" />
+            android:layout_marginTop="110dp"
+            android:labelFor="@integer/led4"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -332,7 +340,9 @@
             android:id="@+id/led5"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="110dp" />
+            android:layout_marginTop="110dp"
+            android:labelFor="@integer/led5"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -340,7 +350,10 @@
             android:id="@+id/led6"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="110dp" />
+            android:layout_marginTop="110dp"
+            android:labelFor="@integer/led6"
+            android:contentDescription="@string/eteint"/>
+            />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -348,7 +361,9 @@
             android:id="@+id/led7"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="110dp" />
+            android:layout_marginTop="110dp"
+            android:labelFor="@integer/led7"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -356,7 +371,9 @@
             android:id="@+id/led8"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="110dp" />
+            android:layout_marginTop="110dp"
+            android:labelFor="@integer/led8"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -364,7 +381,9 @@
             android:id="@+id/led9"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="130dp"
+            android:labelFor="@integer/led9"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -372,7 +391,9 @@
             android:id="@+id/led10"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="130dp"
+            android:labelFor="@integer/led10"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -380,7 +401,9 @@
             android:id="@+id/led11"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="130dp"
+            android:labelFor="@integer/led11"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -388,7 +411,9 @@
             android:id="@+id/led12"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="130dp"
+            android:labelFor="@integer/led12"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -396,7 +421,9 @@
             android:id="@+id/led13"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="130dp"
+            android:labelFor="@integer/led13"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -404,7 +431,9 @@
             android:id="@+id/led14"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="130dp"
+            android:labelFor="@integer/led14"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -412,7 +441,9 @@
             android:id="@+id/led15"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="130dp"
+            android:labelFor="@integer/led15"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -420,7 +451,9 @@
             android:id="@+id/led16"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="130dp" />
+            android:layout_marginTop="130dp"
+            android:labelFor="@integer/led16"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -428,7 +461,9 @@
             android:id="@+id/led17"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="150dp"
+            android:labelFor="@integer/led17"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -436,7 +471,9 @@
             android:id="@+id/led18"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="150dp"
+            android:labelFor="@integer/led18"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -444,7 +481,9 @@
             android:id="@+id/led19"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="150dp"
+            android:labelFor="@integer/led19"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -452,7 +491,9 @@
             android:id="@+id/led20"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="150dp"
+            android:labelFor="@integer/led20"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -460,7 +501,9 @@
             android:id="@+id/led21"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="150dp"
+            android:labelFor="@integer/led21"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -468,7 +511,9 @@
             android:id="@+id/led22"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="150dp"
+            android:labelFor="@integer/led22"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -476,7 +521,9 @@
             android:id="@+id/led23"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="150dp"
+            android:labelFor="@integer/led23"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -484,7 +531,9 @@
             android:id="@+id/led24"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="150dp" />
+            android:layout_marginTop="150dp"
+            android:labelFor="@integer/led24"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -492,7 +541,9 @@
             android:id="@+id/led25"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="170dp" />
+            android:layout_marginTop="170dp"
+            android:labelFor="@integer/led25"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -500,7 +551,9 @@
             android:id="@+id/led26"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="170dp" />
+            android:layout_marginTop="170dp"
+            android:labelFor="@integer/led26"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -508,7 +561,9 @@
             android:id="@+id/led27"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="170dp" />
+            android:layout_marginTop="170dp"
+            android:labelFor="@integer/led27"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -516,7 +571,9 @@
             android:id="@+id/led28"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="170dp" />
+            android:layout_marginTop="170dp"
+            android:labelFor="@integer/led28"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -524,7 +581,9 @@
             android:id="@+id/led29"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="170dp" />
+            android:layout_marginTop="170dp"
+            android:labelFor="@integer/led29"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -532,7 +591,9 @@
             android:id="@+id/led30"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="170dp" />
+            android:layout_marginTop="170dp"
+            android:labelFor="@integer/led30"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -540,7 +601,9 @@
             android:id="@+id/led31"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="170dp" />
+            android:layout_marginTop="170dp"
+            android:labelFor="@integer/led31"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -548,7 +611,9 @@
             android:id="@+id/led32"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="170dp" />
+            android:layout_marginTop="170dp"
+            android:labelFor="@integer/led32"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -556,7 +621,9 @@
             android:id="@+id/led33"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="190dp" />
+            android:layout_marginTop="190dp"
+            android:labelFor="@integer/led33"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -564,7 +631,9 @@
             android:id="@+id/led34"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="190dp" />
+            android:layout_marginTop="190dp"
+            android:labelFor="@integer/led34"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -572,7 +641,9 @@
             android:id="@+id/led35"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="190dp" />
+            android:layout_marginTop="190dp"
+            android:labelFor="@integer/led35"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -580,7 +651,9 @@
             android:id="@+id/led36"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="190dp" />
+            android:layout_marginTop="190dp"
+            android:labelFor="@integer/led36"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -588,7 +661,9 @@
             android:id="@+id/led37"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="190dp" />
+            android:layout_marginTop="190dp"
+            android:labelFor="@integer/led37"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -596,7 +671,9 @@
             android:id="@+id/led38"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="190dp" />
+            android:layout_marginTop="190dp"
+            android:labelFor="@integer/led38"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -604,7 +681,9 @@
             android:id="@+id/led39"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="190dp" />
+            android:layout_marginTop="190dp"
+            android:labelFor="@integer/led39"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -612,7 +691,9 @@
             android:id="@+id/led40"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="190dp" />
+            android:layout_marginTop="190dp"
+            android:labelFor="@integer/led40"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -620,7 +701,9 @@
             android:id="@+id/led41"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="210dp"
+            android:labelFor="@integer/led41"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -628,7 +711,9 @@
             android:id="@+id/led42"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="210dp"
+            android:labelFor="@integer/led42"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -636,7 +721,9 @@
             android:id="@+id/led43"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="210dp"
+            android:labelFor="@integer/led43"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -644,7 +731,9 @@
             android:id="@+id/led44"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="210dp"
+            android:labelFor="@integer/led44"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -652,7 +741,9 @@
             android:id="@+id/led45"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="210dp"
+            android:labelFor="@integer/led45"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -660,7 +751,9 @@
             android:id="@+id/led46"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="210dp"
+            android:labelFor="@integer/led46"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -668,7 +761,9 @@
             android:id="@+id/led47"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="210dp"
+            android:labelFor="@integer/led47"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -676,7 +771,9 @@
             android:id="@+id/led48"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="210dp" />
+            android:layout_marginTop="210dp"
+            android:labelFor="@integer/led48"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -684,7 +781,9 @@
             android:id="@+id/led49"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="230dp" />
+            android:layout_marginTop="230dp"
+            android:labelFor="@integer/led49"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -692,7 +791,9 @@
             android:id="@+id/led50"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="230dp" />
+            android:layout_marginTop="230dp"
+            android:labelFor="@integer/led50"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -700,7 +801,9 @@
             android:id="@+id/led51"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="230dp" />
+            android:layout_marginTop="230dp"
+            android:labelFor="@integer/led51"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -708,7 +811,9 @@
             android:id="@+id/led52"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="230dp" />
+            android:layout_marginTop="230dp"
+            android:labelFor="@integer/led52"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -716,7 +821,9 @@
             android:id="@+id/led53"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="230dp" />
+            android:layout_marginTop="230dp"
+            android:labelFor="@integer/led53"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -724,7 +831,9 @@
             android:id="@+id/led54"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="230dp" />
+            android:layout_marginTop="230dp"
+            android:labelFor="@integer/led54"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -732,7 +841,9 @@
             android:id="@+id/led55"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="230dp" />
+            android:layout_marginTop="230dp"
+            android:labelFor="@integer/led55"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -740,7 +851,9 @@
             android:id="@+id/led56"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="230dp" />
+            android:layout_marginTop="230dp"
+            android:labelFor="@integer/led56"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -748,7 +861,9 @@
             android:id="@+id/led57"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="250dp"
+            android:labelFor="@integer/led57"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -756,7 +871,9 @@
             android:id="@+id/led58"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="250dp"
+            android:labelFor="@integer/led58"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -764,7 +881,9 @@
             android:id="@+id/led59"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="250dp"
+            android:labelFor="@integer/led59"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -772,7 +891,9 @@
             android:id="@+id/led60"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="250dp"
+            android:labelFor="@integer/led60"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -780,7 +901,9 @@
             android:id="@+id/led61"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="250dp"
+            android:labelFor="@integer/led61"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -788,7 +911,9 @@
             android:id="@+id/led62"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="250dp"
+            android:labelFor="@integer/led62"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -796,7 +921,9 @@
             android:id="@+id/led63"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="250dp"
+            android:labelFor="@integer/led63"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -804,7 +931,9 @@
             android:id="@+id/led64"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="250dp" />
+            android:layout_marginTop="250dp"
+            android:labelFor="@integer/led64"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -812,7 +941,9 @@
             android:id="@+id/led65"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="270dp"
+            android:labelFor="@integer/led65"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -820,7 +951,9 @@
             android:id="@+id/led66"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="270dp"
+            android:labelFor="@integer/led66"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -828,7 +961,9 @@
             android:id="@+id/led67"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="270dp"
+            android:labelFor="@integer/led67"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -836,7 +971,9 @@
             android:id="@+id/led68"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="270dp"
+            android:labelFor="@integer/led68"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -844,7 +981,9 @@
             android:id="@+id/led69"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="270dp"
+            android:labelFor="@integer/led69"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -852,7 +991,9 @@
             android:id="@+id/led70"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="270dp"
+            android:labelFor="@integer/led70"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -860,7 +1001,9 @@
             android:id="@+id/led71"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="270dp"
+            android:labelFor="@integer/led71"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -868,7 +1011,9 @@
             android:id="@+id/led72"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="270dp"
+            android:labelFor="@integer/led72"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -876,7 +1021,9 @@
             android:id="@+id/led73"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="290dp" />
+            android:layout_marginTop="290dp"
+            android:labelFor="@integer/led73"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -884,7 +1031,9 @@
             android:id="@+id/led74"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="290dp" />
+            android:layout_marginTop="290dp"
+            android:labelFor="@integer/led74"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -892,7 +1041,9 @@
             android:id="@+id/led75"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="290dp" />
+            android:layout_marginTop="290dp"
+            android:labelFor="@integer/led75"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -900,7 +1051,9 @@
             android:id="@+id/led76"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="290dp" />
+            android:layout_marginTop="290dp"
+            android:labelFor="@integer/led76"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -908,7 +1061,9 @@
             android:id="@+id/led77"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="290dp" />
+            android:layout_marginTop="290dp"
+            android:labelFor="@integer/led77"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -916,7 +1071,9 @@
             android:id="@+id/led78"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="290dp" />
+            android:layout_marginTop="290dp"
+            android:labelFor="@integer/led78"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -924,7 +1081,9 @@
             android:id="@+id/led79"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="290dp" />
+            android:layout_marginTop="290dp"
+            android:labelFor="@integer/led79"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -932,7 +1091,9 @@
             android:id="@+id/led80"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="290dp" />
+            android:layout_marginTop="290dp"
+            android:labelFor="@integer/led80"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -940,7 +1101,9 @@
             android:id="@+id/led81"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="310dp" />
+            android:layout_marginTop="310dp"
+            android:labelFor="@integer/led81"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -948,7 +1111,9 @@
             android:id="@+id/led82"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="310dp" />
+            android:layout_marginTop="310dp"
+            android:labelFor="@integer/led82"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -956,7 +1121,9 @@
             android:id="@+id/led83"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="310dp" />
+            android:layout_marginTop="310dp"
+            android:labelFor="@integer/led83"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -964,7 +1131,9 @@
             android:id="@+id/led84"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="310dp" />
+            android:layout_marginTop="310dp"
+            android:labelFor="@integer/led84"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -972,7 +1141,8 @@
             android:id="@+id/led85"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="310dp" />
+            android:layout_marginTop="310dp"
+            android:labelFor="@integer/led85"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -980,7 +1150,9 @@
             android:id="@+id/led86"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="310dp" />
+            android:layout_marginTop="310dp"
+            android:labelFor="@integer/led86"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -988,7 +1160,9 @@
             android:id="@+id/led87"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="310dp" />
+            android:layout_marginTop="310dp"
+            android:labelFor="@integer/led87"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -996,7 +1170,9 @@
             android:id="@+id/led88"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="310dp" />
+            android:layout_marginTop="310dp"
+            android:labelFor="@integer/led88"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1004,7 +1180,9 @@
             android:id="@+id/led89"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="330dp" />
+            android:layout_marginTop="330dp"
+            android:labelFor="@integer/led89"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1012,7 +1190,9 @@
             android:id="@+id/led90"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="330dp" />
+            android:layout_marginTop="330dp"
+            android:labelFor="@integer/led90"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1020,7 +1200,9 @@
             android:id="@+id/led91"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="330dp" />
+            android:layout_marginTop="330dp"
+            android:labelFor="@integer/led91"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1028,7 +1210,9 @@
             android:id="@+id/led92"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="330dp" />
+            android:layout_marginTop="330dp"
+            android:labelFor="@integer/led92"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1036,7 +1220,9 @@
             android:id="@+id/led93"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="330dp" />
+            android:layout_marginTop="330dp"
+            android:labelFor="@integer/led93"
+            android:contentDescription="@string/eteint" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1044,7 +1230,9 @@
             android:id="@+id/led94"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="330dp" />
+            android:layout_marginTop="330dp"
+            android:labelFor="@integer/led94"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1052,7 +1240,9 @@
             android:id="@+id/led95"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="330dp" />
+            android:layout_marginTop="330dp"
+            android:labelFor="@integer/led95"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1060,7 +1250,9 @@
             android:id="@+id/led96"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="330dp" />
+            android:layout_marginTop="330dp"
+            android:labelFor="@integer/led96"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1068,7 +1260,9 @@
             android:id="@+id/led97"
             android:background="@drawable/led1"
             android:layout_marginLeft="100dp"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="350dp"
+            android:labelFor="@integer/led97"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1076,7 +1270,9 @@
             android:id="@+id/led98"
             android:background="@drawable/led1"
             android:layout_marginLeft="120dp"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="350dp"
+            android:labelFor="@integer/led98"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1084,7 +1280,9 @@
             android:id="@+id/led99"
             android:background="@drawable/led1"
             android:layout_marginLeft="140dp"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="350dp"
+            android:labelFor="@integer/led99"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1092,7 +1290,9 @@
             android:id="@+id/led100"
             android:background="@drawable/led1"
             android:layout_marginLeft="160dp"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="350dp"
+            android:labelFor="@integer/led100"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1100,7 +1300,9 @@
             android:id="@+id/led101"
             android:background="@drawable/led1"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="350dp"
+            android:labelFor="@integer/led101"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1108,7 +1310,9 @@
             android:id="@+id/led102"
             android:background="@drawable/led1"
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="350dp"
+            android:labelFor="@integer/led102"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1116,7 +1320,9 @@
             android:id="@+id/led103"
             android:background="@drawable/led1"
             android:layout_marginLeft="220dp"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="350dp"
+            android:labelFor="@integer/led103"
+            android:contentDescription="@string/eteint"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1124,7 +1330,9 @@
             android:id="@+id/led104"
             android:background="@drawable/led1"
             android:layout_marginLeft="240dp"
-            android:layout_marginTop="350dp" />
+            android:layout_marginTop="350dp"
+            android:labelFor="@integer/led104"
+            android:contentDescription="@string/eteint"/>
     </RelativeLayout>
 
     <RelativeLayout

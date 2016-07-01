@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 import CodeSource.Identification.ScenarioId;
 import CodeSource.Identification.Utilisateur;
+import CodeSource.init.initLed;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -74,6 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
     RelativeLayout tShirtDessin;
     RelativeLayout led;
+    ArrayList<Integer> ledAllumer;
+
 
 
 
@@ -129,6 +132,8 @@ public class MainActivity extends AppCompatActivity {
 
         tShirtDessin = (RelativeLayout) findViewById(R.id.tshirtplus);
         led = (RelativeLayout) findViewById(R.id.leds);
+        ledAllumer = initLed.initLED();
+
 
     }
 
@@ -293,6 +298,27 @@ public class MainActivity extends AppCompatActivity {
 
         tShirtDessin.setVisibility(v.VISIBLE);
         led.setVisibility(v.VISIBLE);
+    }
+
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+    public void led (View v){
+
+      int led = v.getLabelFor();
+      String etat = (String) v.getContentDescription();
+
+      if (etat.compareTo("a") == 0){
+
+          v.setContentDescription("e");
+          v.setBackgroundResource(0);
+          ledAllumer.set(led,0);
+      }
+      else{
+
+          //v.setContentDescription("a");
+          //v.setBackgroundResource(R.drawable.ledactive);
+          //ledAllumer.set(led,1);
+      }
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
