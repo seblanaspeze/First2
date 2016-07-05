@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -133,7 +134,15 @@ public class MainActivity extends AppCompatActivity {
         led = (RelativeLayout) findViewById(R.id.leds);
         ledAllumer = initLed.initLED();
 
-
+        ecranID.setVisibility(View.VISIBLE);
+        iconeTri.setVisibility(View.INVISIBLE);
+        layoutTri.setVisibility(View.INVISIBLE);
+        bouton.setVisibility(View.INVISIBLE);
+        menuPlus.setVisibility(View.INVISIBLE);
+        tShirtPlus.setVisibility(View.INVISIBLE);
+        tShirtDessin.setVisibility(View.INVISIBLE);
+        led.setVisibility(View.INVISIBLE);
+        tShirt.setVisibility(View.INVISIBLE);
     }
 
 
