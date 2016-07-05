@@ -318,20 +318,21 @@ public class MainActivity extends AppCompatActivity {
 
     System.out.println("je rentre dans la méthode led");
         if (Build.VERSION.SDK_INT > 16){
-            int led = v.getLabelFor();
+            int ledd = v.getLabelFor();
+            System.out.println(ledd);
             String etat = (String) v.getContentDescription();
 
             if (etat.compareTo("a") == 0){
 
                 v.setContentDescription("e");
                 v.setBackgroundResource(0);
-                ledAllumer.set(led,0);
+                ledAllumer.set(ledd,0);
             }
             else{
 
                 v.setContentDescription("a");
                 v.setBackgroundResource(R.drawable.ledactive);
-                ledAllumer.set(led,1);
+                ledAllumer.set(ledd,1);
             }
         }
         else{
