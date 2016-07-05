@@ -278,6 +278,7 @@ public class MainActivity extends AppCompatActivity {
             power.setVisibility(v.INVISIBLE);
             tShirtDessin.setVisibility(v.INVISIBLE);
             led.setVisibility(v.INVISIBLE);
+            tShirt.setVisibility(v.INVISIBLE);
 
             menuPlus.setVisibility(v.VISIBLE);
             tShirtPlus.setVisibility(v.VISIBLE);

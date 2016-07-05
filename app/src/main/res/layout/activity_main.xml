@@ -1452,7 +1452,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/tshirts"
         android:layout_marginTop="70dp"
-        android:visibility="invisible">
+        android:visibility="visible">
 
 
         <ImageView
