@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Ecran de dessin
 
-        tShirtDessin = (RelativeLayout) findViewById(R.id.tshirtplus);
+        tShirtDessin = (RelativeLayout) findViewById(R.id.tshirtdessin);
         led = (RelativeLayout) findViewById(R.id.leds);
         ledAllumer = initLed.initLED();
 
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
             compteurL = 1;
         }
         else{
-            linkedin.setBackgroundResource(R.drawable.linkedin);
+            linkedin.setBackgroundResource(R.drawable.linkedin40);
             compteurL = 0;
         }
     }
@@ -262,6 +262,7 @@ public class MainActivity extends AppCompatActivity {
     public  void plus (View v){
 
         if (etatPlus == true){
+
             layoutTri.setVisibility(v.INVISIBLE);
             iconeTri.setVisibility(v.INVISIBLE);
             eclair.setVisibility(v.INVISIBLE);
