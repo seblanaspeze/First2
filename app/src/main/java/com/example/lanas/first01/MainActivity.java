@@ -316,6 +316,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void led (View v){
 
+    System.out.println("je rentre dans la méthode led");
         if (Build.VERSION.SDK_INT > 16){
             int led = v.getLabelFor();
             String etat = (String) v.getContentDescription();
