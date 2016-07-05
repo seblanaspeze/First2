@@ -1,6 +1,5 @@
 package com.example.lanas.first01;
 
-import android.annotation.TargetApi;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -288,12 +287,15 @@ public class MainActivity extends AppCompatActivity {
         else{
 
             layoutTri.setVisibility(v.VISIBLE);
-            iconeTri.setVisibility(v.VISIBLE);
             eclair.setVisibility(v.VISIBLE);
             power.setVisibility(v.VISIBLE);
+            tShirt.setVisibility(v.VISIBLE);
 
             menuPlus.setVisibility(v.INVISIBLE);
             tShirtPlus.setVisibility(v.INVISIBLE);
+            iconeTri.setVisibility(v.INVISIBLE);
+            tShirtDessin.setVisibility(v.INVISIBLE);
+            led.setVisibility(v.INVISIBLE);
             plus.setBackgroundResource(R.drawable.plus);
             etatPlus = true;
         }
@@ -311,24 +313,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+
     public void led (View v){
 
-      int led = v.getLabelFor();
-      String etat = (String) v.getContentDescription();
+        if (Build.VERSION.SDK_INT > 16){
+            int led = v.getLabelFor();
+            String etat = (String) v.getContentDescription();
 
-      if (etat.compareTo("a") == 0){
+            if (etat.compareTo("a") == 0){
 
-          v.setContentDescription("e");
-          v.setBackgroundResource(0);
-          ledAllumer.set(led,0);
-      }
-      else{
+                v.setContentDescription("e");
+                v.setBackgroundResource(0);
+                ledAllumer.set(led,0);
+            }
+            else{
 
-          v.setContentDescription("a");
-          v.setBackgroundResource(R.drawable.ledactive);
-          ledAllumer.set(led,1);
-      }
+                v.setContentDescription("a");
+                v.setBackgroundResource(R.drawable.ledactive);
+                ledAllumer.set(led,1);
+            }
+        }
+        else{
+            System.out.println("je ne peux pas utiliser labelfor");
+        }
+
 
     }
     @Override

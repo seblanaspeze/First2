@@ -6,9 +6,9 @@ android {
 
     defaultConfig {
         applicationId "com.example.lanas.first01"
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 23
-        versionCode 16
+        versionCode 17
         versionName "1.0"
     }
     buildTypes {
