@@ -133,6 +133,8 @@ public class MainActivity extends AppCompatActivity {
         led = (RelativeLayout) findViewById(R.id.leds);
         ledAllumer = initLed.initLED();
 
+        // Initialisation
+
         ecranID.setVisibility(View.VISIBLE);
         iconeTri.setVisibility(View.INVISIBLE);
         layoutTri.setVisibility(View.INVISIBLE);
@@ -142,6 +144,8 @@ public class MainActivity extends AppCompatActivity {
         tShirtDessin.setVisibility(View.INVISIBLE);
         led.setVisibility(View.INVISIBLE);
         tShirt.setVisibility(View.INVISIBLE);
+
+
     }
 
 
@@ -317,6 +321,9 @@ public class MainActivity extends AppCompatActivity {
     public void led (View v){
 
     System.out.println("je rentre dans la méthode led");
+    int test = v.getId();
+    System.out.println(test);
+
         if (Build.VERSION.SDK_INT > 16){
             int ledd = v.getLabelFor();
             System.out.println(ledd);

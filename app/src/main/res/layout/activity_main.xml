@@ -312,7 +312,10 @@
             android:layout_marginTop="110dp"
             android:labelFor="@integer/led1"
             android:contentDescription="@string/eteint"
-            android:onClick="led" />
+            android:onClick="led"
+            android:longClickable="false"
+            android:clickable="false"
+            android:cropToPadding="true" />
 
         <ImageButton
             android:layout_width="wrap_content"
