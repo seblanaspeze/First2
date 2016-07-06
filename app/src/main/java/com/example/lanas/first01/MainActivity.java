@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void twitter(View v){
 
-        if (compteurF == 0){
+        if (compteurT == 0){
             twitter.setBackgroundResource(R.drawable.twitter);
             compteurT = 1;
         }
@@ -182,6 +182,8 @@ public class MainActivity extends AppCompatActivity {
             twitter.setBackgroundResource(R.drawable.twitter40);
             compteurT = 0;
         }
+
+        System.out.println(compteurT);
     }
     public void pinterest(View v){
 
@@ -326,7 +328,7 @@ public class MainActivity extends AppCompatActivity {
 
     System.out.println("je rentre dans la méthode led");
     int test = v.getId();
-    ;
+
 
         if (Build.VERSION.SDK_INT > 16){
             int ledd = v.getLabelFor();
