@@ -12,10 +12,12 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
+import java.util.Hashtable;
 
 import CodeSource.Identification.ScenarioId;
 import CodeSource.Identification.Utilisateur;
 import CodeSource.init.initLed;
+import CodeSource.init.tabledeHashage;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -74,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout tShirtDessin;
     RelativeLayout led;
     ArrayList<Integer> ledAllumer;
+    Hashtable<Integer, Integer> table;
 
 
 
@@ -132,6 +135,7 @@ public class MainActivity extends AppCompatActivity {
         tShirtDessin = (RelativeLayout) findViewById(R.id.tshirtdessin);
         led = (RelativeLayout) findViewById(R.id.leds);
         ledAllumer = initLed.initLED();
+        table = tabledeHashage.table();
 
         // Initialisation
 
@@ -322,24 +326,26 @@ public class MainActivity extends AppCompatActivity {
 
     System.out.println("je rentre dans la méthode led");
     int test = v.getId();
-    System.out.println(test);
+    ;
 
         if (Build.VERSION.SDK_INT > 16){
             int ledd = v.getLabelFor();
             System.out.println(ledd);
+            System.out.println(table.get(test));
+            System.out.println(table.get(1));
             String etat = (String) v.getContentDescription();
 
             if (etat.compareTo("a") == 0){
 
                 v.setContentDescription("e");
-                v.setBackgroundResource(0);
-                ledAllumer.set(ledd,0);
+                v.setBackgroundResource(R.drawable.led1);
+                ledAllumer.set(table.get(test),0);
             }
             else{
 
                 v.setContentDescription("a");
                 v.setBackgroundResource(R.drawable.ledactive);
-                ledAllumer.set(ledd,1);
+                ledAllumer.set(table.get(test),1);
             }
         }
         else{
