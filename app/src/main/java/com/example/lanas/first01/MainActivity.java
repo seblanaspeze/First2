@@ -244,11 +244,14 @@ public class MainActivity extends AppCompatActivity {
         String name = identifiant.getText().toString();
         String pass = password.getText().toString();
         int s = utilisateurs.size();
+        boolean motDePasse = false;
 
 
         for(int i = 0; i < s; i++){
 
             if (utilisateurs.get(i).getId().compareTo(name) == 0){
+
+                motDePasse = true;
                 if (utilisateurs.get(i).getPassword().compareTo(pass) == 0){
 
                     ecranID.setVisibility(v.INVISIBLE);
@@ -258,10 +261,14 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else{
-                    identifiant.setText("identifiant invalide");
+                    identifiant.setText("Mot de passe invalide");
                 }
             }
 
+        }
+
+        if(motDePasse == false){
+            identifiant.setText("Identifiant invalide");
         }
     }
     public void tri (View v){
