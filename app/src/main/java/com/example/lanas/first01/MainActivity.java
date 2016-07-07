@@ -325,7 +325,7 @@ public class MainActivity extends AppCompatActivity {
         menuPlus.setVisibility(v.INVISIBLE);
         tShirtPlus.setVisibility(v.INVISIBLE);
 
-         //commit de sauvegarde 
+         //commit de sauvegarde
         //tShirtDessin.setVisibility(v.VISIBLE);
         led.setVisibility(v.VISIBLE);
     }
