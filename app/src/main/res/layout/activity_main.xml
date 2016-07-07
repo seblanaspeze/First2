@@ -1252,7 +1252,9 @@
             android:layout_marginLeft="151dp"
             android:layout_marginTop="266dp"
             android:labelFor="@integer/led85"
-            android:onClick="led"/>
+            android:onClick="led"
+            android:contentDescription="@string/eteint"
+            android:focusable="false" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -1462,6 +1464,15 @@
             android:labelFor="@integer/led104"
             android:contentDescription="@string/eteint"
             android:onClick="led"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:id="@+id/reset"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="400dp"
+            android:onClick="reset" />
     </RelativeLayout>
 
     <RelativeLayout
